@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Complex.hpp
+
+/Users/frankliuao/Downloads/cmake_tutorial/src/HelloComplex.cpp
+stdlib.h
+-
+iostream
+-
+Complex.hpp
+/Users/frankliuao/Downloads/cmake_tutorial/src/Complex.hpp
+
