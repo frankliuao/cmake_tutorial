@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.6)
 project(HelloComplex)
 
-
+enable_testing()
 if(NOT EXISTS ${PROJECT_SOURCE_DIR}/bin) 
   file(MAKE_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 endif()
@@ -16,3 +16,4 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 
 add_executable(HelloComplex
   ${PROJECT_SOURCE_DIR}/src/HelloComplex.cpp)
+add_test(exeTest HelloComplex)
