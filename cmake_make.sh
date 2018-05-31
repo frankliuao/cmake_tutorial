@@ -11,7 +11,7 @@ then
     fi
     rm -rf build/
     exit 0
-  elif [ $1 = "make" ] 
+  elif [ $1 = "make" ] || [ $1 = "test" ]
   then
     :
   else
@@ -24,4 +24,9 @@ if [ ! -d ./build/ ]
 then
   mkdir ./build/
 fi
-cd ./build/; cmake ..; make; cd - 1>/dev/null
+cd ./build/; cmake ..; make; 
+if [ $1 = "test" ]
+then 
+  make test
+fi
+cd - 1>/dev/null
