@@ -16,4 +16,4 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 
 add_executable(HelloComplex
   ${PROJECT_SOURCE_DIR}/src/HelloComplex.cpp)
-add_test(exeTest HelloComplex)
+add_test(exeTest ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/HelloComplex)
